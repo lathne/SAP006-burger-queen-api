@@ -12,7 +12,7 @@ const getOrders = (req, res) => {
     .findAll({
       include: [
         {
-          model: db.product,
+          model: db.products,
           as: "Products",
           attributes: [
             "id",
@@ -66,7 +66,7 @@ const getOrderUid = (req, res) => {
       },
       include: [
         {
-          model: db.product,
+          model: db.products,
           as: "Products",
           attributes: [
             "id",
