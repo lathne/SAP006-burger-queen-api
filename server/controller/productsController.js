@@ -9,7 +9,7 @@
 const db = require("../db/models");
 
 const getProducts = (req, res) => {
-  db.product
+  db.products
     .findAll()
     .then((allProducts) => {
       res.send(allProducts);
@@ -21,7 +21,7 @@ const getProducts = (req, res) => {
 };
 
 const getProductUid = (req, res) => {
-  db.product
+  db.products
     .findOne({
       where: {
         id: req.params.uid,

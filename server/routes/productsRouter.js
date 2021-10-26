@@ -1,10 +1,10 @@
 const { Router } = require('express');
-const { getAllProducts } = require('../controller/productsController');
+const { getProducts } = require('../controller/productsController');
 
 const router = Router();
 
 // requisições
-router.get('/', getAllProducts);
+router.get('/', getProducts);
 // router.get('/:productid');
 // router.post('/');
 // router.put('/:productid');
