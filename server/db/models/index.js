@@ -1,5 +1,5 @@
 /*
-  O modelo é a interface do banco de dados que permite que você interaja com a
+  O model é a interface do banco de dados que permite que você interaja com a
   API do banco de dados e crie diferentes esquemas de entidade do seu aplicativo
   no banco de dados, ele é chamado do controlador dependendo da
   solicitação do cliente se precisar de dados armazenados, o controlador irá pedir

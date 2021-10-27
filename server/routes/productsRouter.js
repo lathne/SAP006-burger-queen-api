@@ -5,9 +5,9 @@ const router = Router();
 
 // requisições
 router.get('/', getProducts);
-// router.get('/:productid');
-// router.post('/');
-// router.put('/:productid');
-// router.delete('/:productid');
+router.get('/:productid');
+router.post('/');
+router.put('/:productid');
+router.delete('/:productid');
 
 module.exports = router;
