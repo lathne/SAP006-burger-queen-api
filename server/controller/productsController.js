@@ -1,11 +1,4 @@
-/*
-  O controlador é a parte que cuida do processamento da solicitação do cliente,
-  que lida com a solicitação HTTP e retorna uma resposta.
-  A resposta pode ser um JSON se você estiver chamando um endpoint de API
-*/
-
 // aqui vai o código que acessa o banco de dados
-
 const db = require("../db/models");
 
 const getProducts = (req, res) => {
@@ -32,7 +25,6 @@ const getProductUid = (req, res) => {
       res.send(oneProduct);
     })
     .catch((error) => {
-      console.log(error);
       res.status(502);
       res.send(error);
     });
